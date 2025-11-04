@@ -49,7 +49,7 @@ This project provides a script for fine-tuning the Mistral-7B model using LoRA (
 - Merged final model: `./mistral-merged-model`
 
 ## Customization
-Edit the `Config` class in `program.py` to change model, dataset path, training parameters, and output directories.
+Edit the `Config` class in `main.py` to change model, dataset path, training parameters, and output directories.
 
 ## License
 
