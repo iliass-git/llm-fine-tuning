@@ -23,7 +23,7 @@ This project provides a script for fine-tuning the Mistral-7B model using LoRA (
   ```
 
 ## Usage
-1. Place your dataset in JSONL format at the path specified in `Config.DATASET_PATH` (default: `/content/dataset/data-set.jsonl`).
+1. Place your dataset in JSONL format at the path specified in `src/config.py` (default: `/content/dataset/data-set.jsonl`).
 2. (Recommended) Create and activate a virtual environment:
    ```powershell
    python -m venv .venv
@@ -33,9 +33,9 @@ This project provides a script for fine-tuning the Mistral-7B model using LoRA (
    ```powershell
    pip install -r requirements.txt
    ```
-4. Run the script:
+4. Run the script from the `src` directory:
    ```powershell
-   python main.py
+   python src/main.py
    ```
 5. The script will:
    - Check GPU availability
@@ -49,7 +49,7 @@ This project provides a script for fine-tuning the Mistral-7B model using LoRA (
 - Merged final model: `./mistral-merged-model`
 
 ## Customization
-Edit the `Config` class in `main.py` to change model, dataset path, training parameters, and output directories.
+Edit the `Config` class in `src/config.py` to change model, dataset path, training parameters, and output directories.
 
 ## License
 
